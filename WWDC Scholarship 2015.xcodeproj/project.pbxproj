@@ -14,6 +14,12 @@
 		94676F421AE99867006E230C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94676F411AE99867006E230C /* Images.xcassets */; };
 		94676F451AE99867006E230C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94676F431AE99867006E230C /* LaunchScreen.xib */; };
 		94676F511AE99867006E230C /* WWDC_Scholarship_2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94676F501AE99867006E230C /* WWDC_Scholarship_2015Tests.m */; };
+		94676F5D1AEAEC98006E230C /* LeftPriorProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94676F5B1AEAEC98006E230C /* LeftPriorProjectsViewController.m */; };
+		94676F5E1AEAEC98006E230C /* LeftPriorProjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94676F5C1AEAEC98006E230C /* LeftPriorProjectsViewController.xib */; };
+		94676F621AEAECA8006E230C /* CenterAboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94676F601AEAECA8006E230C /* CenterAboutMeViewController.m */; };
+		94676F631AEAECA8006E230C /* CenterAboutMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94676F611AEAECA8006E230C /* CenterAboutMeViewController.xib */; };
+		94676F671AEAECBA006E230C /* RightHistoricalYearsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94676F651AEAECBA006E230C /* RightHistoricalYearsViewController.m */; };
+		94676F681AEAECBA006E230C /* RightHistoricalYearsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94676F661AEAECBA006E230C /* RightHistoricalYearsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,15 @@
 		94676F4A1AE99867006E230C /* WWDC Scholarship 2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WWDC Scholarship 2015Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94676F4F1AE99867006E230C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94676F501AE99867006E230C /* WWDC_Scholarship_2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDC_Scholarship_2015Tests.m; sourceTree = "<group>"; };
+		94676F5A1AEAEC98006E230C /* LeftPriorProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftPriorProjectsViewController.h; sourceTree = "<group>"; };
+		94676F5B1AEAEC98006E230C /* LeftPriorProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftPriorProjectsViewController.m; sourceTree = "<group>"; };
+		94676F5C1AEAEC98006E230C /* LeftPriorProjectsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftPriorProjectsViewController.xib; sourceTree = "<group>"; };
+		94676F5F1AEAECA8006E230C /* CenterAboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterAboutMeViewController.h; sourceTree = "<group>"; };
+		94676F601AEAECA8006E230C /* CenterAboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterAboutMeViewController.m; sourceTree = "<group>"; };
+		94676F611AEAECA8006E230C /* CenterAboutMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CenterAboutMeViewController.xib; sourceTree = "<group>"; };
+		94676F641AEAECBA006E230C /* RightHistoricalYearsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightHistoricalYearsViewController.h; sourceTree = "<group>"; };
+		94676F651AEAECBA006E230C /* RightHistoricalYearsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightHistoricalYearsViewController.m; sourceTree = "<group>"; };
+		94676F661AEAECBA006E230C /* RightHistoricalYearsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightHistoricalYearsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,15 @@
 		94676F331AE99867006E230C /* WWDC Scholarship 2015 */ = {
 			isa = PBXGroup;
 			children = (
+				94676F5A1AEAEC98006E230C /* LeftPriorProjectsViewController.h */,
+				94676F5B1AEAEC98006E230C /* LeftPriorProjectsViewController.m */,
+				94676F5C1AEAEC98006E230C /* LeftPriorProjectsViewController.xib */,
+				94676F5F1AEAECA8006E230C /* CenterAboutMeViewController.h */,
+				94676F601AEAECA8006E230C /* CenterAboutMeViewController.m */,
+				94676F611AEAECA8006E230C /* CenterAboutMeViewController.xib */,
+				94676F641AEAECBA006E230C /* RightHistoricalYearsViewController.h */,
+				94676F651AEAECBA006E230C /* RightHistoricalYearsViewController.m */,
+				94676F661AEAECBA006E230C /* RightHistoricalYearsViewController.xib */,
 				94676F381AE99867006E230C /* AppDelegate.h */,
 				94676F391AE99867006E230C /* AppDelegate.m */,
 				94676F3B1AE99867006E230C /* ViewController.h */,
@@ -199,8 +223,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94676F681AEAECBA006E230C /* RightHistoricalYearsViewController.xib in Resources */,
+				94676F5E1AEAEC98006E230C /* LeftPriorProjectsViewController.xib in Resources */,
 				94676F401AE99867006E230C /* Main.storyboard in Resources */,
 				94676F451AE99867006E230C /* LaunchScreen.xib in Resources */,
+				94676F631AEAECA8006E230C /* CenterAboutMeViewController.xib in Resources */,
 				94676F421AE99867006E230C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94676F671AEAECBA006E230C /* RightHistoricalYearsViewController.m in Sources */,
+				94676F5D1AEAEC98006E230C /* LeftPriorProjectsViewController.m in Sources */,
 				94676F3D1AE99867006E230C /* ViewController.m in Sources */,
+				94676F621AEAECA8006E230C /* CenterAboutMeViewController.m in Sources */,
 				94676F3A1AE99867006E230C /* AppDelegate.m in Sources */,
 				94676F371AE99867006E230C /* main.m in Sources */,
 			);
