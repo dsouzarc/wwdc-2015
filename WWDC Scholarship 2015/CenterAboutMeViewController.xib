@@ -92,15 +92,15 @@
                             </constraints>
                         </imageView>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3j7-4s-sPH">
-                            <rect key="frame" x="16" y="877" width="343" height="337"/>
+                            <rect key="frame" x="16" y="877" width="343" height="278"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <outlet property="dataSource" destination="-1" id="qQ0-6W-PHY"/>
-                                <outlet property="delegate" destination="-1" id="G1Z-lT-1Mn"/>
+                                <outlet property="dataSource" destination="-1" id="1nX-ys-Bux"/>
+                                <outlet property="delegate" destination="-1" id="I8k-Fr-Eyj"/>
                             </connections>
                         </tableView>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3Do-ZG-mWc">
-                            <rect key="frame" x="16" y="1277" width="343" height="517"/>
+                            <rect key="frame" x="16" y="1248" width="343" height="517"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <outlet property="dataSource" destination="-1" id="6dM-v6-0cN"/>
@@ -108,7 +108,7 @@
                             </connections>
                         </tableView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Projects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shs-d9-SBC">
-                            <rect key="frame" x="48" y="1232" width="279" height="37"/>
+                            <rect key="frame" x="48" y="1203" width="279" height="37"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>

@@ -152,9 +152,16 @@ static NSString *aboutMeCellIdentifier = @"AboutMeTableViewCell";
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(tableView == self.projectsTableView || tableView == self.codingHistoryTableView) {
+    if(tableView == self.projectsTableView) {
         if(indexPath.row == selectedProject) {
             return 130;
+        }
+        return 40;
+    }
+    
+    else if(tableView == self.codingHistoryTableView) {
+        if(indexPath.row == selectedHistory) {
+            return 120;
         }
         return 40;
     }
@@ -186,9 +193,11 @@ static NSString *aboutMeCellIdentifier = @"AboutMeTableViewCell";
     
     if(tableView == self.projectsTableView) {
         aboutMe = (AboutMe*)self.previousProjects[indexPath.row];
+        cell.detailTextView.hidden = !(selectedProject == indexPath.row);
     }
     else if(tableView == self.codingHistoryTableView) {
         aboutMe = (AboutMe*)self.codingHistory[indexPath.row];
+        cell.detailTextView.hidden = !(selectedHistory == indexPath.row);
     }
     
     cell.firstTitleLabel.text = aboutMe.title1;
@@ -199,13 +208,13 @@ static NSString *aboutMeCellIdentifier = @"AboutMeTableViewCell";
     CGRect tempFrame = cell.detailTextView.frame;
     tempFrame.size = cell.detailTextView.contentSize;
     cell.detailTextView.frame = tempFrame;
-    cell.detailTextView.hidden = !(selectedProject == indexPath.row);
     
     return cell;
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"CLICKED");
     if(tableView == self.projectsTableView) {
         selectedProject = (int)indexPath.row;
         [self.projectsTableView reloadData];
