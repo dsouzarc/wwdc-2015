@@ -15,11 +15,13 @@
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundCoverphoto;
 @property (strong, nonatomic) IBOutlet UITextView *codingExperienceTextView;
 @property (strong, nonatomic) IBOutlet UITableView *projectsTableView;
+@property (strong, nonatomic) IBOutlet UITableView *codingHistoryTableView;
 
 @property (strong, nonatomic) IBOutlet UILabel *biographyNameTitle;
 @property (strong, nonatomic) IBOutlet UIImageView *profilePictureView;
 
 @property (strong, nonatomic) NSMutableArray *previousProjects;
+@property (strong, nonatomic) NSMutableArray *codingHistory;
 
 @end
 
@@ -29,7 +31,8 @@
     [super viewDidLoad];
     
     [self.projectsTableView registerNib:[UINib nibWithNibName:@"AboutMeTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:aboutMeCellIdentifier];
-
+    [self.codingHistoryTableView registerNib:[UINib nibWithNibName:@"AboutMeTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:aboutMeCellIdentifier];
+    
     UILabel *topNameTitle = [[UILabel alloc] init];
     topNameTitle.text = @"Ryan D'souza             2015 WWDC Scholarship App    ";
     topNameTitle.textColor = [UIColor whiteColor];
@@ -53,6 +56,27 @@
     NSAttributedString * attrStr = [[NSAttributedString alloc] initWithData:[codingExperience dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
     
     self.codingExperienceTextView.attributedText = attrStr;
+    
+}
+
+- (void) updateCodingHistoryArray
+{
+    AboutMe *history;
+    
+    history = [[AboutMe alloc] initWithEverything:@"2010" title2:@"8th Grade" detail:@"Drag and drop 'programming' to control a robot through a maze."];
+    [self.codingHistory addObject:history];
+    
+    history = [[AboutMe alloc] initWithEverything:@"2011" title2:@"9th Grade" detail:@"Began taking Java lessons after school with students from Princeton University"];
+    [self.codingHistory addObject:history];
+    
+    history = [[AboutMe alloc] initWithEverything:@"2012" title2:@"10th Grade" detail:@"Continued learning Java through school's Accelerated Java course. Also picked up AppleScript and VBA for small projects"];
+    [self.codingHistory addObject:history];
+    
+    history = [[AboutMe alloc] initWithEverything:@"2013" title2:@"11th Grade" detail:@"More Java via school's AP Computer Science class. Began developing Android apps"];
+    [self.codingHistory addObject:history];
+    
+    history = [[AboutMe alloc] initWithEverything:@"2014" title2:@"12th grade" detail:@"Still going strong with Java by taking Princeton University's Algorithms and Data Structures class (COS 226). Continued with Android development until December 2011, then switched to iOS development using Objective-C"];
+    [self.codingHistory addObject:history];
     
 }
 
@@ -110,6 +134,9 @@
     if(self) {
         self.previousProjects = [[NSMutableArray alloc] init];
         [self updatePreviousProjectsArray];
+        
+        self.codingHistory = [[NSMutableArray alloc] init];
+        [self updateCodingHistoryArray];
     }
     
     return self;
@@ -120,11 +147,12 @@
 /****************************/
 
 static int selectedProject = -1;
+static int selectedHistory = -1;
 static NSString *aboutMeCellIdentifier = @"AboutMeTableViewCell";
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(tableView == self.projectsTableView) {
+    if(tableView == self.projectsTableView || tableView == self.codingHistoryTableView) {
         if(indexPath.row == selectedProject) {
             return 130;
         }
@@ -137,8 +165,10 @@ static NSString *aboutMeCellIdentifier = @"AboutMeTableViewCell";
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if(tableView == self.projectsTableView) {
-        
         return self.previousProjects.count;
+    }
+    if(tableView == self.codingHistoryTableView) {
+        return self.codingHistory.count;
     }
     
     return 0;
@@ -152,7 +182,14 @@ static NSString *aboutMeCellIdentifier = @"AboutMeTableViewCell";
         cell = [[AboutMeTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:aboutMeCellIdentifier];
     }
     
-    AboutMe *aboutMe = (AboutMe*)self.previousProjects[indexPath.row];
+    AboutMe *aboutMe;
+    
+    if(tableView == self.projectsTableView) {
+        aboutMe = (AboutMe*)self.previousProjects[indexPath.row];
+    }
+    else if(tableView == self.codingHistoryTableView) {
+        aboutMe = (AboutMe*)self.codingHistory[indexPath.row];
+    }
     
     cell.firstTitleLabel.text = aboutMe.title1;
     cell.firstTitleLabel.adjustsFontSizeToFitWidth = YES;
@@ -172,6 +209,10 @@ static NSString *aboutMeCellIdentifier = @"AboutMeTableViewCell";
     if(tableView == self.projectsTableView) {
         selectedProject = (int)indexPath.row;
         [self.projectsTableView reloadData];
+    }
+    else if(tableView == self.codingHistoryTableView) {
+        selectedHistory = (int) indexPath.row;
+        [self.codingHistoryTableView reloadData];
     }
 }
 
