@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DVOMarqueeView.h"
+#import "AboutMe.h"
+#import "AboutMeTableViewCell.h"
 
-@interface CenterAboutMeViewController : UIViewController
+@interface CenterAboutMeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

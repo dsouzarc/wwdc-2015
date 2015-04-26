@@ -23,6 +23,9 @@
 		9489F65E1AED6FDC00B68829 /* cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9489F65D1AED6FDC00B68829 /* cover.jpg */; };
 		9489F6601AED708300B68829 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9489F65F1AED708300B68829 /* profile.jpg */; };
 		9489F6661AED7D3D00B68829 /* DVOMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9489F6651AED7D3D00B68829 /* DVOMarqueeView.m */; };
+		9489F66A1AED873900B68829 /* AboutMeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9489F6681AED873900B68829 /* AboutMeTableViewCell.m */; };
+		9489F66B1AED873900B68829 /* AboutMeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9489F6691AED873900B68829 /* AboutMeTableViewCell.xib */; };
+		9489F66E1AED895700B68829 /* AboutMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9489F66D1AED895700B68829 /* AboutMe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,11 @@
 		9489F65F1AED708300B68829 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
 		9489F6641AED7D3D00B68829 /* DVOMarqueeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVOMarqueeView.h; sourceTree = "<group>"; };
 		9489F6651AED7D3D00B68829 /* DVOMarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVOMarqueeView.m; sourceTree = "<group>"; };
+		9489F6671AED873900B68829 /* AboutMeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeTableViewCell.h; sourceTree = "<group>"; };
+		9489F6681AED873900B68829 /* AboutMeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeTableViewCell.m; sourceTree = "<group>"; };
+		9489F6691AED873900B68829 /* AboutMeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutMeTableViewCell.xib; sourceTree = "<group>"; };
+		9489F66C1AED895700B68829 /* AboutMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMe.h; sourceTree = "<group>"; };
+		9489F66D1AED895700B68829 /* AboutMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,11 @@
 		94676F331AE99867006E230C /* WWDC Scholarship 2015 */ = {
 			isa = PBXGroup;
 			children = (
+				9489F66C1AED895700B68829 /* AboutMe.h */,
+				9489F66D1AED895700B68829 /* AboutMe.m */,
+				9489F6671AED873900B68829 /* AboutMeTableViewCell.h */,
+				9489F6681AED873900B68829 /* AboutMeTableViewCell.m */,
+				9489F6691AED873900B68829 /* AboutMeTableViewCell.xib */,
 				94676F5A1AEAEC98006E230C /* LeftPriorProjectsViewController.h */,
 				94676F5B1AEAEC98006E230C /* LeftPriorProjectsViewController.m */,
 				94676F5C1AEAEC98006E230C /* LeftPriorProjectsViewController.xib */,
@@ -248,6 +261,7 @@
 				9489F6601AED708300B68829 /* profile.jpg in Resources */,
 				94676F401AE99867006E230C /* Main.storyboard in Resources */,
 				94676F451AE99867006E230C /* LaunchScreen.xib in Resources */,
+				9489F66B1AED873900B68829 /* AboutMeTableViewCell.xib in Resources */,
 				94676F631AEAECA8006E230C /* CenterAboutMeViewController.xib in Resources */,
 				94676F421AE99867006E230C /* Images.xcassets in Resources */,
 			);
@@ -267,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9489F66E1AED895700B68829 /* AboutMe.m in Sources */,
 				94676F671AEAECBA006E230C /* RightHistoricalYearsViewController.m in Sources */,
+				9489F66A1AED873900B68829 /* AboutMeTableViewCell.m in Sources */,
 				94676F5D1AEAEC98006E230C /* LeftPriorProjectsViewController.m in Sources */,
 				94676F3D1AE99867006E230C /* ViewController.m in Sources */,
 				94676F621AEAECA8006E230C /* CenterAboutMeViewController.m in Sources */,
