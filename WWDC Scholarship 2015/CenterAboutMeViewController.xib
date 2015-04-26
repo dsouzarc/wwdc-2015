@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="backgroundCoverphoto" destination="iAe-Vd-1Lo" id="sKe-oc-LOI"/>
                 <outlet property="biographyNameTitle" destination="NPT-OD-aJP" id="ppD-nB-ax7"/>
+                <outlet property="mainScrollView" destination="SRp-uv-VEp" id="4Ui-gN-mcq"/>
                 <outlet property="profilePictureView" destination="oTn-5W-01q" id="y8D-k4-yhT"/>
                 <outlet property="topNameTitle" destination="A8L-WS-cbi" id="JNv-2V-6H1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="NKA-QW-NZV"/>

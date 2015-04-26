@@ -7,8 +7,10 @@
 //
 
 #import "CenterAboutMeViewController.h"
+#import "DVOMarqueeView.h"
 
 @interface CenterAboutMeViewController ()
+@property (strong, nonatomic) IBOutlet UIScrollView *mainScrollView;
 
 @property (strong, nonatomic) IBOutlet UILabel *topNameTitle;
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundCoverphoto;
@@ -21,6 +23,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    UILabel *topNameTitle = [[UILabel alloc] init];
+    topNameTitle.text = @"Ryan D'souza             2015 WWDC Scholarship App    ";
+    topNameTitle.textColor = [UIColor whiteColor];
+    topNameTitle.font = self.topNameTitle.font;
+    [topNameTitle sizeToFit];
+    DVOMarqueeView *labelMarquee = [[DVOMarqueeView alloc] initWithFrame:self.topNameTitle.frame];
+    labelMarquee.viewToScroll = topNameTitle;
+    [self.topNameTitle removeFromSuperview];
+    [self.mainScrollView addSubview:labelMarquee];
+    [labelMarquee beginScrolling];
     
     self.profilePictureView.layer.cornerRadius = self.profilePictureView.frame.size.width/2;
     self.profilePictureView.clipsToBounds = YES;
