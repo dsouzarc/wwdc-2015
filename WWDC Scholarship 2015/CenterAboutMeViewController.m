@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *topNameTitle;
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundCoverphoto;
 
+@property (strong, nonatomic) IBOutlet UILabel *biographyNameTitle;
 @property (strong, nonatomic) IBOutlet UIImageView *profilePictureView;
 @end
 
@@ -24,7 +25,16 @@
     self.profilePictureView.layer.cornerRadius = self.profilePictureView.frame.size.width/2;
     self.profilePictureView.clipsToBounds = YES;
     self.profilePictureView.layer.borderColor = [[UIColor whiteColor] CGColor];
+    
+    [self boldItalicFontForLabel:self.biographyNameTitle];
 
 }
+
+-(void)boldItalicFontForLabel:(UILabel *)label
+{
+    UIFont *newFont = [UIFont fontWithName:[NSString stringWithFormat:@"%@-BoldItalic",label.font.fontName] size:label.font.pointSize];
+    label.font = newFont;
+}
+
 
 @end
