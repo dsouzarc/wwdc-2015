@@ -20,6 +20,10 @@
 		94676F631AEAECA8006E230C /* CenterAboutMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94676F611AEAECA8006E230C /* CenterAboutMeViewController.xib */; };
 		94676F671AEAECBA006E230C /* RightHistoricalYearsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94676F651AEAECBA006E230C /* RightHistoricalYearsViewController.m */; };
 		94676F681AEAECBA006E230C /* RightHistoricalYearsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94676F661AEAECBA006E230C /* RightHistoricalYearsViewController.xib */; };
+		9489F6591AED6F0900B68829 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 9489F6581AED6F0900B68829 /* profile.png */; };
+		9489F65B1AED6F1A00B68829 /* top_of_eiffel_tower.png in Resources */ = {isa = PBXBuildFile; fileRef = 9489F65A1AED6F1A00B68829 /* top_of_eiffel_tower.png */; };
+		9489F65E1AED6FDC00B68829 /* cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9489F65D1AED6FDC00B68829 /* cover.jpg */; };
+		9489F6601AED708300B68829 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9489F65F1AED708300B68829 /* profile.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		94676F641AEAECBA006E230C /* RightHistoricalYearsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightHistoricalYearsViewController.h; sourceTree = "<group>"; };
 		94676F651AEAECBA006E230C /* RightHistoricalYearsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightHistoricalYearsViewController.m; sourceTree = "<group>"; };
 		94676F661AEAECBA006E230C /* RightHistoricalYearsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightHistoricalYearsViewController.xib; sourceTree = "<group>"; };
+		9489F6581AED6F0900B68829 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		9489F65A1AED6F1A00B68829 /* top_of_eiffel_tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_of_eiffel_tower.png; sourceTree = "<group>"; };
+		9489F65D1AED6FDC00B68829 /* cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover.jpg; sourceTree = "<group>"; };
+		9489F65F1AED708300B68829 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 				94676F3E1AE99867006E230C /* Main.storyboard */,
 				94676F411AE99867006E230C /* Images.xcassets */,
 				94676F431AE99867006E230C /* LaunchScreen.xib */,
+				9489F65C1AED6F2300B68829 /* Misc Images */,
 				94676F341AE99867006E230C /* Supporting Files */,
 			);
 			path = "WWDC Scholarship 2015";
@@ -141,6 +150,17 @@
 				94676F4F1AE99867006E230C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9489F65C1AED6F2300B68829 /* Misc Images */ = {
+			isa = PBXGroup;
+			children = (
+				9489F6581AED6F0900B68829 /* profile.png */,
+				9489F65F1AED708300B68829 /* profile.jpg */,
+				9489F65D1AED6FDC00B68829 /* cover.jpg */,
+				9489F65A1AED6F1A00B68829 /* top_of_eiffel_tower.png */,
+			);
+			name = "Misc Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,12 +243,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9489F65E1AED6FDC00B68829 /* cover.jpg in Resources */,
 				94676F681AEAECBA006E230C /* RightHistoricalYearsViewController.xib in Resources */,
 				94676F5E1AEAEC98006E230C /* LeftPriorProjectsViewController.xib in Resources */,
+				9489F6601AED708300B68829 /* profile.jpg in Resources */,
 				94676F401AE99867006E230C /* Main.storyboard in Resources */,
+				9489F65B1AED6F1A00B68829 /* top_of_eiffel_tower.png in Resources */,
 				94676F451AE99867006E230C /* LaunchScreen.xib in Resources */,
 				94676F631AEAECA8006E230C /* CenterAboutMeViewController.xib in Resources */,
 				94676F421AE99867006E230C /* Images.xcassets in Resources */,
+				9489F6591AED6F0900B68829 /* profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +470,7 @@
 				94676F561AE99867006E230C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94676F571AE99867006E230C /* Build configuration list for PBXNativeTarget "WWDC Scholarship 2015Tests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +479,7 @@
 				94676F591AE99867006E230C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
