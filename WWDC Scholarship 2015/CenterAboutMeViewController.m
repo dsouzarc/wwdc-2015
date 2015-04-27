@@ -50,13 +50,6 @@
     
     [self boldItalicFontForLabel:self.biographyNameTitle];
     
-    NSMutableString *codingExperience = [[NSMutableString alloc] init];
-    [codingExperience appendString:@"<b>2010:</b> Drag and drop programming in middle school to move a robot\n"];
-    
-    NSAttributedString * attrStr = [[NSAttributedString alloc] initWithData:[codingExperience dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
-    
-    self.codingExperienceTextView.attributedText = attrStr;
-    
 }
 
 - (void) updateCodingHistoryArray
@@ -91,30 +84,30 @@
     project = [[AboutMe alloc] initWithEverything:@"QEventShare" title2:@"2013" detail:@"First Android Application. Streamlines adding and sharing events by allowing the events to be created/shared via QR Code"];
     [self.previousProjects addObject:project];
     
-    project = [[AboutMe alloc] initWithEverything:@"PHS PowerSchool" title2:@"2014/15" detail:@"Android and then iOS Application. Allows Princeton High School students to view their grades faster by automatically logging them into their account and opening the grades home page. Also calculates both the weighted and unweighted GPA, and has the unique feature of allowing the selection of multiple assignments to be copied to the clipboard (useful for making to-do lists"];
+    project = [[AboutMe alloc] initWithEverything:@"PHS PowerSchool" title2:@"2014/15" detail:@"Android and then iOS Application. Allows Princeton High School students to view their grades faster by automatically logging them into their account and opening the grades home page. Also calculates both the weighted and unweighted GPA, and has the unique feature of allowing the selection of multiple assignments to be copied to the clipboard (useful for making to-do lists. github.com/dsouzarc/PHSPowerSchool & github.com/dsouzarc/phsPowerSchooliOS"];
     [self.previousProjects addObject:project];
     
-    project = [[AboutMe alloc] initWithEverything:@"AppSearcher" title2:@"2013" detail:@"Android Application. Brings iOS's native search bar to Android. Shows a list of all the installed apps faster and with less memory than its competition on the Play Store. The searcher can be opened via the notification bar or the chat head, which can be moved around the screen. Apps can be listed by their use or name"];
+    project = [[AboutMe alloc] initWithEverything:@"AppSearcher" title2:@"2013" detail:@"Android Application. Brings iOS's native search bar to Android. Shows a list of all the installed apps faster and with less memory than its competition on the Play Store. The searcher can be opened via the notification bar or the chat head, which can be moved around the screen. Apps can be listed by their use or name. github.com/dsouzarc/appsearcher"];
     [self.previousProjects addObject:project];
     
-    project = [[AboutMe alloc] initWithEverything:@"Shopder" title2:@"2014" detail:@"Android & Google Glass app. User can choose a nearby store and enter their shopping list. Their shopping list is then returned with the aisle number beside each item. The store receives the user's shopping list and can then send targeted advertisements to the shopper Ex. Shopping List Item: 4 boxes of brownie mix. Store Advertisement: Buy 1 dozen eggs, get the 2nd dozen free. Logic: Eggs are needed to make brownies" ];
+    project = [[AboutMe alloc] initWithEverything:@"Shopder" title2:@"2014" detail:@"Android & Google Glass app. User can choose a nearby store and enter their shopping list. Their shopping list is then returned with the aisle number beside each item. The store receives the user's shopping list and can then send targeted advertisements to the shopper Ex. Shopping List Item: 4 boxes of brownie mix. Store Advertisement: Buy 1 dozen eggs, get the 2nd dozen free. Logic: Eggs are needed to make brownies. github.com/dsouzarc/shopder" ];
     [self.previousProjects addObject:project];
     
-    project = [[AboutMe alloc] initWithEverything:@"Pitch Counter" title2:@"2014" detail:@"Android Application. Because league laws place a maximum limit on the number of pitches a pitcher can pitch, this app allows the coach to keep track of each pitcher's pitches. The number of strikes and balls are also recorded so the coach can sort his pitchers by their ratio and number of pitches"];
+    project = [[AboutMe alloc] initWithEverything:@"Pitch Counter" title2:@"2014" detail:@"Android Application. Because league laws place a maximum limit on the number of pitches a pitcher can pitch, this app allows the coach to keep track of each pitcher's pitches. The number of strikes and balls are also recorded so the coach can sort his pitchers by their ratio and number of pitches. github.com/dsouzarc/pitchcounter"];
     [self.previousProjects addObject:project];
     
-    project = [[AboutMe alloc] initWithEverything:@"Keyboard Scambler" title2:@"2014" detail:@"Android Appliction. Fun game that makes the user type a series of words with a scrambled keyboard. There are four levels (including a Djvorak keyboard) and thousands of possible words (obscure, but legit"];
+    project = [[AboutMe alloc] initWithEverything:@"Keyboard Scambler" title2:@"2014" detail:@"Android Appliction. Fun game that makes the user type a series of words with a scrambled keyboard. There are four levels (including a Djvorak keyboard) and thousands of possible words (obscure, but legit. github.com/dsouzarc/keyboardscrambler"];
     [self.previousProjects addObject:project];
     
-    project = [[AboutMe alloc] initWithEverything:@"Pacman" title2:@"2014" detail:@"Java GUI. The classic arcade game written as a GUI in Java. It's my solution to Brown University's CS 015 Final Project"];
+    project = [[AboutMe alloc] initWithEverything:@"Pacman" title2:@"2014" detail:@"Java GUI. The classic arcade game written as a GUI in Java. It's my solution to Brown University's CS 015 Final Project. github.com/dsouzarc/pacman"];
     
-    project = [[AboutMe alloc] initWithEverything:@"Prom Me" title2:@"2015" detail:@"iOS Application. Nicknamed 'Tinder for prom'. Users can view other people's Facebook profile picture and decide whether they would want to go to prom with them. If two people choose each other, they are notified. Potential prom dates can be filtered by grade, location, high school, and gender"];
+    project = [[AboutMe alloc] initWithEverything:@"Prom Me" title2:@"2015" detail:@"iOS Application. Nicknamed 'Tinder for prom'. Users can view other people's Facebook profile picture and decide whether they would want to go to prom with them. If two people choose each other, they are notified. Potential prom dates can be filtered by grade, location, high school, and gender. github.com/dsouzarc/promme"];
     [self.previousProjects addObject:project];
     
-    project = [[AboutMe alloc] initWithEverything:@"Bring Me Food" title2:@"2014/15" detail:@"Android and then iOS app. A refined version of Uber for crowd-sourcing the delivery of food. Client can choose a restaurant, view that restaurant's menu items, choose and customize an item, and then place an order for that item. Drivers will get a notification for the new order, can claim the order, get the order, and then drop it off at the client's address. The driver can post updates to the user along the way, and the user can see the driver's location"];
+    project = [[AboutMe alloc] initWithEverything:@"Bring Me Food" title2:@"2014/15" detail:@"Android and then iOS app. A refined version of Uber for crowd-sourcing the delivery of food. Client can choose a restaurant, view that restaurant's menu items, choose and customize an item, and then place an order for that item. Drivers will get a notification for the new order, can claim the order, get the order, and then drop it off at the client's address. The driver can post updates to the user along the way, and the user can see the driver's location. github.com/dsouzarc/bmfiOS"];
     [self.previousProjects addObject:project];
     
-    project = [[AboutMe alloc] initWithEverything:@"PHS Lab Days" title2:@"2014/15" detail:@"Java GUI, then Android and then iOS Application. Sends text messages on lab days to students who sign up for it. Currently sends text messages to 11% of the student body on a daily basis"];
+    project = [[AboutMe alloc] initWithEverything:@"PHS Lab Days" title2:@"2014/15" detail:@"Java GUI, then Android and then iOS Application. Sends text messages on lab days to students who sign up for it. Currently sends text messages to 11% of the student body on a daily basis. github.com/dsouzarc/phsLabDaysiOS"];
     [self.previousProjects addObject:project];
     
     project = [[AboutMe alloc] initWithEverything:@"Facebook Message Analyzer" title2:@"2014/15" detail:@"Android and then iOS Application. Analyzes a user's last 5,000 messages in both group chats private messages. Shows the most often used word, average response time, and average word and sentence length as a function over time (how it changes throughout the day and the week). In group conversations, shows who responds to who the quickest ie. If a girl sends a message, how many guys reply right-away when compared to if a guy sends a message"];

@@ -26,6 +26,8 @@
 		9489F66A1AED873900B68829 /* AboutMeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9489F6681AED873900B68829 /* AboutMeTableViewCell.m */; };
 		9489F66B1AED873900B68829 /* AboutMeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9489F6691AED873900B68829 /* AboutMeTableViewCell.xib */; };
 		9489F66E1AED895700B68829 /* AboutMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9489F66D1AED895700B68829 /* AboutMe.m */; };
+		9489F6721AEDB11100B68829 /* iOSProjectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9489F6701AEDB11100B68829 /* iOSProjectTableViewCell.m */; };
+		9489F6731AEDB11100B68829 /* iOSProjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9489F6711AEDB11100B68829 /* iOSProjectTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,9 @@
 		9489F6691AED873900B68829 /* AboutMeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutMeTableViewCell.xib; sourceTree = "<group>"; };
 		9489F66C1AED895700B68829 /* AboutMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMe.h; sourceTree = "<group>"; };
 		9489F66D1AED895700B68829 /* AboutMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMe.m; sourceTree = "<group>"; };
+		9489F66F1AEDB11100B68829 /* iOSProjectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSProjectTableViewCell.h; sourceTree = "<group>"; };
+		9489F6701AEDB11100B68829 /* iOSProjectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSProjectTableViewCell.m; sourceTree = "<group>"; };
+		9489F6711AEDB11100B68829 /* iOSProjectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iOSProjectTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +141,9 @@
 				9489F6651AED7D3D00B68829 /* DVOMarqueeView.m */,
 				9489F65C1AED6F2300B68829 /* Misc Images */,
 				94676F341AE99867006E230C /* Supporting Files */,
+				9489F66F1AEDB11100B68829 /* iOSProjectTableViewCell.h */,
+				9489F6701AEDB11100B68829 /* iOSProjectTableViewCell.m */,
+				9489F6711AEDB11100B68829 /* iOSProjectTableViewCell.xib */,
 			);
 			path = "WWDC Scholarship 2015";
 			sourceTree = "<group>";
@@ -258,6 +266,7 @@
 				9489F65E1AED6FDC00B68829 /* cover.jpg in Resources */,
 				94676F681AEAECBA006E230C /* RightHistoricalYearsViewController.xib in Resources */,
 				94676F5E1AEAEC98006E230C /* LeftPriorProjectsViewController.xib in Resources */,
+				9489F6731AEDB11100B68829 /* iOSProjectTableViewCell.xib in Resources */,
 				9489F6601AED708300B68829 /* profile.jpg in Resources */,
 				94676F401AE99867006E230C /* Main.storyboard in Resources */,
 				94676F451AE99867006E230C /* LaunchScreen.xib in Resources */,
@@ -290,6 +299,7 @@
 				94676F3A1AE99867006E230C /* AppDelegate.m in Sources */,
 				94676F371AE99867006E230C /* main.m in Sources */,
 				9489F6661AED7D3D00B68829 /* DVOMarqueeView.m in Sources */,
+				9489F6721AEDB11100B68829 /* iOSProjectTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

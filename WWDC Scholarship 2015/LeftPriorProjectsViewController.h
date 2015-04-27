@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DVOMarqueeView.h"
+#import "iOSProjectTableViewCell.h"
 
-@interface LeftPriorProjectsViewController : UIViewController
+@interface LeftPriorProjectsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
